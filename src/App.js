@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Result from "./components/Result/result";
+import Tag from "./components/Tag/tag";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -8,16 +8,17 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h4>Result test</h4>
-      <Result
-        // status="error"
-        title="Successfully Purchased Cloud Server ECS!"
-        subTitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait."
-        extra={[
-          <button key="console">Go Console</button>,
-          <button key="buy">Buy Again</button>
-        ]}
-      />
+      <h4>Tag test</h4>
+      <div>
+        <h4 style={{ marginBottom: 16 }}>Presets:</h4>
+        <div>
+          <Tag color="success">success</Tag>
+          <Tag color="processing">processing</Tag>
+          <Tag color="error">error</Tag>
+          <Tag color="default">default</Tag>
+          <Tag color="warning">warning</Tag>
+        </div>
+      </div>
     </div>
   );
 }
