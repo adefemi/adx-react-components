@@ -4,12 +4,20 @@
 /node_modules
 /.pnp
 .pnp.js
+.idea
+
+**/.sass-cache
+**/.sass-cache/*
+**.sass-cache**
+**.css.map
+src/**/*.css.map
 
 # testing
 /coverage
 
 # production
 /build
+
 
 # misc
 .DS_Store
