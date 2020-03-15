@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,800&display=swap");
+.adx-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+.adx-result .title {
+  font-size: 25px;
+}
+.adx-result .subtitle {
+  font-size: 15px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+.adx-result .status img {
+  width: 90px;
+}
+
+/*# sourceMappingURL=result.css.map */

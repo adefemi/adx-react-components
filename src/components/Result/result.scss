@@ -1,0 +1,25 @@
+@import "../theme";
+
+.adx-result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $primary-font;
+
+  .title{
+    font-size: 25px;
+  }
+
+  .subtitle{
+    font-size: 15px;
+    color: darken(white, 40%);
+    margin-bottom: 20px;
+  }
+
+  .status{
+    img{
+      width: 90px;
+    }
+  }
+}
