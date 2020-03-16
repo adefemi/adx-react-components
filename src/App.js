@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Tag from "./components/Tag/tag";
+import Divider from "./components/Divider/divider";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -8,17 +9,11 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h4>Tag test</h4>
-      <div>
-        <h4 style={{ marginBottom: 16 }}>Presets:</h4>
-        <div>
-          <Tag color="success">success</Tag>
-          <Tag color="processing">processing</Tag>
-          <Tag color="error">error</Tag>
-          <Tag color="default">default</Tag>
-          <Tag color="warning">warning</Tag>
-        </div>
-      </div>
+      <h4>Divider test</h4>
+      <Divider />
+      <Divider dashed />
+      <Divider />
+      <Divider dashed />
     </div>
   );
 }
