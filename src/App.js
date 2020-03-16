@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Tag from "./components/Tag/tag";
+import Input from "./components/input/Input";
 import Divider from "./components/Divider/divider";
 
 function App() {
@@ -9,11 +9,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h4>Divider test</h4>
+      <h4>Input test</h4>
+      <Input placeholder="Basic usage" />
       <Divider />
-      <Divider dashed />
-      <Divider />
-      <Divider dashed />
+      <Input addonBefore="http://" addonAfter=".com" defaultValue="mysite" />
     </div>
   );
 }

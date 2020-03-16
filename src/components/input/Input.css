@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,800&display=swap");
+.input-control {
+  position: relative;
+  flex: 1;
+}
+.input-control > * {
+  font-family: "Nunito", sans-serif;
+}
+.input-control .input-container-cover {
+  display: flex;
+  width: 100%;
+}
+.input-control .input-error-text {
+  margin-top: 5px;
+  color: #c34d2e;
+  font-size: 13px;
+}
+.input-control .currency-selector {
+  width: 90px;
+}
+.input-control .currency-selector .select-control {
+  min-width: 80px;
+}
+.input-control .currency-selector .select-control .select-button {
+  border: none;
+  border-right: 1px solid #cccccc;
+}
+.input-control .dropdown-control {
+  height: 50px;
+  width: 120px;
+  margin-right: 10px;
+}
+.input-control .dropdown-control input {
+  text-align: center;
+}
+.input-control .phone-dropdown {
+  padding: 0 3px !important;
+}
+.input-control .input-field {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.5s ease;
+  min-width: 100px;
+  background-color: transparent;
+}
+.input-control .input-field i:first-child {
+  display: block;
+  padding-left: 10px;
+}
+.input-control .input-field i:last-child {
+  display: block;
+  padding-right: 10px;
+}
+.input-control .input-field:hover, .input-control .input-field:focus-within {
+  border-color: #5cc3c7;
+}
+.input-control input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  outline: none;
+  padding: 0 20px;
+  color: black !important;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.input-control input.iconLeft {
+  padding-left: 30px;
+}
+.input-control input.addonBefore {
+  padding-left: 80px;
+}
+.input-control input.addonAfter {
+  padding-right: 30px;
+}
+.input-control input.iconRight {
+  padding-right: 40px;
+}
+.input-control input:disabled {
+  cursor: not-allowed;
+}
+.input-control input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+.input-control .addon {
+  padding: 0 15px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-right: 1px solid #e6e6e6;
+}
+.input-control .addon.after {
+  left: unset;
+  right: 0;
+  border-right: unset;
+  border-left: 1px solid #e6e6e6;
+}
+.input-control .iconLeft {
+  position: absolute;
+  left: 0;
+  color: #999999;
+}
+.input-control .iconRight {
+  position: absolute;
+  right: 0;
+  color: #999999;
+}
+.input-control .input-field.disabled:hover,
+.input-control .input-field.disabled:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.input-control .input-field.disabled input {
+  color: #999999 !important;
+}
+
+.input-control.error .input-field {
+  border-color: #c34d2e;
+}
+.input-control.error .input-field input {
+  color: #c34d2e;
+}
+
+.input-control.small .input-field {
+  height: 25px;
+}
+.input-control.small .input-field input {
+  font-size: 12px;
+}
+
+.input-control.large .input-field {
+  height: 55px;
+}
+.input-control.large .input-field input {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=Input.css.map */
