@@ -3,6 +3,7 @@ import calenderSvg from "./assets/calender.svg";
 import chevron from "./assets/chevron.svg";
 import chevrons from "./assets/chevrons.svg";
 import "./datePicker.css";
+import proptype from "prop-types";
 
 function getDaysInMonth(m, y) {
   return m === 2
@@ -376,6 +377,15 @@ function DatePicker(props) {
 DatePicker.defaultProps = {
   dateType: "date",
   rangePicker: false
+};
+
+DatePicker.propType = {
+  dateType: proptype.oneOf(["date", "month", "year"]),
+  rangePicker: proptype.bool,
+  value: proptype.string,
+  startDate: proptype.string,
+  endDate: proptype.string,
+  onChange: proptype.func
 };
 
 export default DatePicker;
