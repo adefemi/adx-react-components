@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Badge from "./components/Badge/badge";
 import "./app.css";
+import DatePicker from "./components/DatePicker/datePicker";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -10,10 +10,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h4>Badge test</h4>
-      <Badge dot>
-        <a href="#">Link something</a>
-      </Badge>
+      <h4>DatePicker test</h4>
+      <DatePicker id={1} />
+      <DatePicker rangePicker id={2} />
     </div>
   );
 }
