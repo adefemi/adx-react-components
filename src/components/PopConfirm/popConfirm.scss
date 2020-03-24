@@ -1,0 +1,71 @@
+@import "../theme";
+
+.adx-popConfirm{
+  position: relative;
+  font-family: $primary-font;
+
+  .overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: transparent;
+  }
+
+  .popConfirm{
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 4px;
+    transition: .3s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    .context{
+      display: flex;
+      align-items: center;
+
+      img{
+        width: 16px;
+        margin-right: 10px;
+      }
+
+      .message{
+        font-size: 13px;
+        color: darken(white, 70%);
+      }
+      margin-bottom: 10px;
+    }
+    .controls{
+      display: flex;
+      justify-content: flex-end;
+      button{
+        margin-left: 10px;
+        outline: none;
+        font-size: 12px;
+        padding: 4px 10px;
+        border: 1px solid darken(white, 10%);
+        background-color: transparent;
+        border-radius: 2px;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: darken(white, 70%);
+
+        &.yes{
+          background-color: $primary-color;
+          color: white;
+          border-color: $primary-color;
+        }
+      }
+    }
+
+    &.show{
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}

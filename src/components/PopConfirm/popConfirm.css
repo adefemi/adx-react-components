@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,800&display=swap");
+.adx-popConfirm {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+}
+.adx-popConfirm .overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: transparent;
+}
+.adx-popConfirm .popConfirm {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.adx-popConfirm .popConfirm .context {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.adx-popConfirm .popConfirm .context img {
+  width: 16px;
+  margin-right: 10px;
+}
+.adx-popConfirm .popConfirm .context .message {
+  font-size: 13px;
+  color: #4d4d4d;
+}
+.adx-popConfirm .popConfirm .controls {
+  display: flex;
+  justify-content: flex-end;
+}
+.adx-popConfirm .popConfirm .controls button {
+  margin-left: 10px;
+  outline: none;
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #e6e6e6;
+  background-color: transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #4d4d4d;
+}
+.adx-popConfirm .popConfirm .controls button.yes {
+  background-color: #236467;
+  color: white;
+  border-color: #236467;
+}
+.adx-popConfirm .popConfirm.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=popConfirm.css.map */
